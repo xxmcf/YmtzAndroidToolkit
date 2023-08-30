@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MicrophoneWaveActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+<!--        <include layout="@layout/title" />-->
+        <com.example.demo.utils.TitleView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_view"
+            />
+
+        <com.example.demo.utils.AudioSurfaceView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/audioView"
+            />
+
+        <ImageView
+            android:id="@+id/play"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/start_play"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            />
+
+
+    </LinearLayout>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/play"-->
+<!--        android:layout_width="36dp"-->
+<!--        android:layout_height="36dp"-->
+<!--        android:src="@drawable/start_play"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        />-->
+
+
+
+</RelativeLayout >

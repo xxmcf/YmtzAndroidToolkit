@@ -1,0 +1,82 @@
+pluginManagement {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        jcenter()
+        google()
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven {url 'https://maven.aliyun.com/repository/google/'}
+        maven {url 'https://maven.aliyun.com/repository/public/'}
+        maven {url 'https://maven.aliyun.com/repository/gradle-plugin/'}
+        // 华为开源镜像：https://mirrors.huaweicloud.com
+        maven { url 'https://repo.huaweicloud.com/repository/maven' }
+        // JitPack 远程仓库：https://jitpack.io
+        maven { url 'https://jitpack.io' }
+        maven {
+            setAllowInsecureProtocol(true)
+            url 'http://maven.aliyun.com/nexus/content/groups/public/'
+        }
+        maven {
+            url "http://repo.corpautohome.com/nexus/content/groups/public/"
+            setAllowInsecureProtocol(true)
+        }
+        maven { url "https://jitpack.io" }
+        google()
+        maven { url 'https://repo1.maven.org/maven2/com/umeng/' }   //友盟maven库
+        maven { url 'https://maven.google.com' }
+
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+
+        maven {url 'https://maven.aliyun.com/repository/google/'}
+        maven {url 'https://maven.aliyun.com/repository/public/'}
+        maven {url 'https://maven.aliyun.com/repository/gradle-plugin/'}
+        maven { url 'https://repo.huaweicloud.com/repository/maven' }
+        maven {
+            setAllowInsecureProtocol(true)
+            url 'http://maven.aliyun.com/nexus/content/groups/public/'
+        }
+        mavenLocal()
+        mavenCentral()   //为集成友盟添加
+        maven { url 'https://repo1.maven.org/maven2/com/umeng/' }
+        maven {
+            // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
+            url "$rootProject.projectDir/maven/android"
+        }
+        maven {
+            setAllowInsecureProtocol(true)
+            url "http://qim.qunar.com/package/mvn/repository/maven-qim/"
+        }
+        maven {
+            setAllowInsecureProtocol(true)
+            url "http://developer.huawei.com/repo/"
+        }
+        maven{url"https://jitpack.io"}
+        maven {
+            url "http://repo.corpautohome.com/nexus/content/groups/public/"
+            setAllowInsecureProtocol(true)
+        }
+        maven {
+            url "https://s3.amazonaws.com/repo.commonsware.com"
+        }
+        maven {
+            url 'https://storage.flutter-io.cn/download.flutter.io'
+
+        }
+        google()
+        jcenter()
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven {
+            url "$rootDir/../../ReactNative/RNLaunch/node_modules/react-native/android"
+        }
+        maven {
+            url("$rootDir/../../ReactNative/RNLaunch/node_modules/jsc-android/dist")
+        }
+    }
+}
+rootProject.name = "MyAndroidDemo"
+include ':app'

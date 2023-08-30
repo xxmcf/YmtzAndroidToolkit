@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation">
+    <string name="app_name">MyAndroidDemo</string>
+    <string name="demo1_name">麦克风声音波形演示</string>
+    <string name="str_deny_audio_permissions">被永久拒绝授权，请手动授予录音权限</string>
+    <string name="str_manual_open_audio_permission">请手动打开录音权限</string>
+    <string name="card_name_micphone_wave">麦克风声音波形演示</string>
+    <string name="card_desc_micphone_wave">打开麦克风然读取音频数据，根据相关算法显示声音波形</string>
+    <string name="card_name_chat">聊天界面演示</string>
+    <string name="card_desc_chat">聊天界面，采用RecyclerView实现，包含接收消息、发送消息以及输入框和发送按钮</string>
+
+    <string name="card_name_react_native">RN小程序调试模式演示</string>
+    <string name="card_desc_react_native">模拟汽车人RN小程序调试模式\n
+一个界面输入要调试的本地RN服务IP和端口\n
+根据IP和端口下载对应的index.android.bundle文件\n
+加载本地保存的index.android.build文件打开小程序\n
+小程序打开用一个通用的窗口打开\n
+小程返回退出要有对应的混合开发接</string>
+    <string name="card5_name">demo4</string>
+
+    <string name="card4_desc">demo3的描述</string>
+    <string name="card4_name">demo4</string>
+    <string name="card5_desc">demo4的描述</string>
+
+</resources>

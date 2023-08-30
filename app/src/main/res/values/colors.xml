@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorSkyBlue">#0088FF</color>
+
+
+    <color name="waveformBacg">#efefef</color>
+    <color name="waveformCircle">#f6837e</color>
+    <color name="waveformBorderLine">#a9a9a9</color>
+    <color name="waveformCenterLine">#27c7af</color>
+
+    <color name="blue_top">#3A5FFF</color>
+    <color name="red_delete">#F25058</color>
+    <color name="text_black">#333333</color>
+    <color name="default_gray6">#999999</color>
+    <color name="colorgray">#f1f1f1</color>
+</resources>
