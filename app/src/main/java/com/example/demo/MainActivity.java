@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 import com.example.demo.adapter.MainCardAdapter;
 import com.example.demo.utils.CardInfo;
 import com.example.demo.utils.CardType;
-import com.example.demo.utils.ScreenUtil;
+import com.ymtz.commonlib.utils.ScreenUtil;
 import com.yanzhenjie.recyclerview.OnItemClickListener;
 import com.yanzhenjie.recyclerview.OnItemMenuClickListener;
 import com.yanzhenjie.recyclerview.SwipeMenu;

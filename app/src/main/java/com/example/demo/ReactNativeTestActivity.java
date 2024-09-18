@@ -1,22 +1,18 @@
 package com.example.demo;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.demo.R;
 import com.example.demo.rn.NewReactNativeActivity;
 import com.example.demo.utils.TitleView;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import com.ymtz.commonlib.ToastUtils;
+import com.ymtz.commonlib.utils.ToastUtils;
 
 public class ReactNativeTestActivity extends BaseActivity {
 
