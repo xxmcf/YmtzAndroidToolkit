@@ -49,7 +49,7 @@ public class NewRnPrepareFragment extends Fragment implements View.OnClickListen
         this.url = url;
         this.code = code;
         this.androidBundleURL = !url.endsWith("/") ? url + "/" : url;
-        this.androidBundleURL += "index.android.bundle?platform=android&dev=false&minify=false";
+        this.androidBundleURL += "index.android.bundle?platform=android&dev=true&minify=false";
     }
 
     @Override

@@ -16,12 +16,14 @@ import com.example.demo.utils.TitleView;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import com.ymtz.commonlib.ToastUtils;
 
 public class ReactNativeTestActivity extends BaseActivity {
 
     private EditText codeText;
     private EditText serverText;
     private Button openBtn;
+    private Button testBtn;
 
     @Override
     protected void initLayout() {
@@ -41,6 +43,7 @@ public class ReactNativeTestActivity extends BaseActivity {
         serverText = (EditText) findViewById(R.id.server_info_text);
         codeText = (EditText) findViewById(R.id.rn_code);
         openBtn = (Button) findViewById(R.id.open_rn);
+        testBtn = (Button) findViewById(R.id.btn_test);
 
     }
 
@@ -77,6 +80,13 @@ public class ReactNativeTestActivity extends BaseActivity {
                 intent.putExtra("code", code);
                 startActivity(intent);
                 ((Activity) ReactNativeTestActivity.this).overridePendingTransition(R.anim.push_left_in, R.anim.budong);
+            }
+        });
+
+        testBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ToastUtils.show(ReactNativeTestActivity.this, "引用 aar");
             }
         });
     }

@@ -1,0 +1,76 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    namespace 'com.ymtz.commonlib'
+    compileSdk 28
+
+    defaultConfig {
+        minSdk 16
+        targetSdk 28
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
+
+task makeJar(type: Jar) {
+    baseName 'commonlib'
+    from 'build/intermediates/javac/debug/classes'
+    //into('build/libs')
+    exclude('BuildConfig.class', 'R.class')
+    exclude{ it.name.startsWith('R$');}
+}
+
+apply plugin: 'maven-publish'
+publishing {
+    publications {
+        maven(MavenPublication) {
+            //库的groupId，类似包名
+            groupId = "com.ymtz.commonlib"
+            //库名称
+            artifactId = "commonlib"
+            //版本号
+            version = "1.0.0"
+            //
+            afterEvaluate {
+                from components.release
+            }
+        }
+    }
+    repositories {
+        maven {
+//            非 https 的仓库地址，需要设置 allowInsecureProtocol true
+            allowInsecureProtocol true
+//            name = "nexus" //可选
+            //maven库地址
+            url = "http://repo.corpautohome.com/nexus/content/repositories/superautobots/"
+            //maven库用户名和密码
+            credentials {
+                it.username = "admin"
+                it.password = "admin123"
+            }
+        }
+    }
+}

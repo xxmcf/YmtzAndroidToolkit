@@ -36,7 +36,7 @@
                 android:paddingRight="8dp"
                 android:minHeight="35dp"
                 android:hint="RN小程序唯一标识code"
-                android:text="RNLaunch"
+                android:text="HelloRN"
                 android:maxLines="1"
                 android:background="@drawable/bg_chat_edittext">
 
@@ -72,6 +72,23 @@
                 style="?android:attr/borderlessButtonStyle"
                 android:background="@drawable/shape_session_btn_send"
                 android:text="打开"
+                android:textColor="@color/white"
+                android:textSize="13sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_test"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/shape_session_btn_send"
+                android:text="测试"
                 android:textColor="@color/white"
                 android:textSize="13sp">
 

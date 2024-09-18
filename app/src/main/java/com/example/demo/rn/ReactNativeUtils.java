@@ -50,7 +50,7 @@ public class ReactNativeUtils {
                 Log.i(TAG, " -----prepareRN----file exist");
                 String externalPath = context.getApplicationContext().getFilesDir().getAbsolutePath() + "/index.android.bundle";
                 Log.i(TAG, " -----prepareRN----externalPath=" + externalPath);
-                //readToWriteFile(JS_BUNDLE_LOCAL_PATH, externalPath);
+                readToWriteFile(JS_BUNDLE_LOCAL_PATH, externalPath);
                 builder.setJSBundleFile(JS_BUNDLE_LOCAL_PATH);
             } else {
                 Log.i(TAG, " -----prepareRN----file not exist");

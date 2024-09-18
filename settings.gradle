@@ -26,6 +26,7 @@ pluginManagement {
         maven { url 'https://maven.google.com' }
 
         gradlePluginPortal()
+
     }
 }
 dependencyResolutionManagement {
@@ -70,13 +71,11 @@ dependencyResolutionManagement {
         google()
         jcenter()
         maven { url 'https://maven.aliyun.com/repository/jcenter' }
-        maven {
-            url "$rootDir/../../ReactNative/RNLaunch/node_modules/react-native/android"
-        }
-        maven {
-            url("$rootDir/../../ReactNative/RNLaunch/node_modules/jsc-android/dist")
-        }
+//        maven {
+//            url("$rootDir/../../ReactNative/HelloReact/node_modules/jsc-android/dist")
+//        }
     }
 }
-rootProject.name = "MyAndroidDemo"
+rootProject.name = "YmtzAndroidToolkit"
 include ':app'
+include ':commonlib2'
