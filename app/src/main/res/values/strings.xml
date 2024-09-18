@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation">
-    <string name="app_name">YmtzAndroidToolkit</string>
+    <string name="app_name">TestDemo</string>
     <string name="demo1_name">麦克风声音波形演示</string>
     <string name="str_deny_audio_permissions">被永久拒绝授权，请手动授予录音权限</string>
     <string name="str_manual_open_audio_permission">请手动打开录音权限</string>
