@@ -1,4 +1,4 @@
-package com.ymtz.commonlib.utils;
+package com.example.demo.utils;
 
 import android.content.Context;
 import android.util.DisplayMetrics;

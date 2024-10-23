@@ -79,3 +79,4 @@ dependencyResolutionManagement {
 rootProject.name = "YmtzAndroidToolkit"
 include ':app'
 include ':commonlib'
+include ':base_rn'
